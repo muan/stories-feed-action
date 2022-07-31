@@ -1,0 +1,11 @@
+{
+  "name": "stories-feed-action",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "author": "Mu-An Chiou <me@muanchiou.com>",
+  "license": "MIT",
+  "dependencies": {
+    "icloud-shared-album": "^1.1.0"
+  }
+}

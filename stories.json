@@ -1,0 +1,18 @@
+---
+---
+
+{
+  "version": "http://jsonfeed.org/version/1",
+  "title": "@{{ site.username }}'s stories",
+  "icon": "http://github.com/{{ site.username }}.png",
+  "home_page_url": "{{ site.url }}/stories.json",
+  "description": "Stories.",
+  "items": [{% for story in site.data.stories %}
+    {
+      "id": "{{ story.id }}",
+      "summary": "{{ story.summary }}",
+      "image": "{{ site.url }}/{{ story.image }}",
+      "date_published": "{{ story.date_published }}"
+    }{% if site.data.stories.last != story %},{% endif %}{% endfor %}
+  ]
+}

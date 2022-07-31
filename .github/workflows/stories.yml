@@ -1,0 +1,34 @@
+name: "Fetch and process iCloud photos"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  process:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Nodejs and npm
+        uses: actions/setup-node@v2
+        with:
+          node-version: 17.7
+
+      - name: Setup yarn
+        run: |
+          npm install -g yarn
+          yarn
+
+      - name: Run script
+        run: ICLOUD_TOKEN=${{ secrets.ICLOUD_TOKEN }} node --experimental-fetch index.js
+
+      - name: Push changes
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "icloud sync [bot]"
+          git add .
+          git commit -m "Fetch and commit iCloud photos" || echo "Nothing to commit"
+          git fetch origin main
+          git push origin HEAD:main

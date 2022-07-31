@@ -1,0 +1,22 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Story viewer action</title>
+</head>
+<body>
+
+  <script src="https://unpkg.com/story-view-element" type="module" defer></script>
+  <story-view src="./stories.json" ttl="8640000"></story-view>
+  
+  <hr>
+
+  <p>{{ site.data.stories.size }} stories found.</p>
+  <p>Feed url: <a href="{{ site.url }}/stories.json">{{ site.url }}/stories.json</a></p>
+</body>
+</html>
