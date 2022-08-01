@@ -24,3 +24,7 @@ Steps to setup:
   ![](https://user-images.githubusercontent.com/1153134/182153258-4f7e7cb5-5b80-48d9-96c8-3491075d9232.gif)
 
 8. With the [GitHub iOS app](https://github.com/mobile), you'll be able to set up a Shortcut to dispatch the workflow event right from your phone.
+
+---
+
+This GitHub Action commits the images in the repository, which frankly aren't that great performance-wise. I recommend checking out [Cloudflare Images](https://www.cloudflare.com/products/cloudflare-images/).
