@@ -20,8 +20,7 @@ Steps to setup:
 
 6. Manually trigger a workflow dispatch event at `https://github.com/<username>/stories-feed-action/actions/workflows/stories.yml` to see images being added to the repository.
 
-7. See something like [this](https://muan.github.io/stories-feed-action/) at `https://<username>.github.io/stories-feed-action`:
-  ![](https://user-images.githubusercontent.com/1153134/182153258-4f7e7cb5-5b80-48d9-96c8-3491075d9232.gif)
+7. See something like [this](https://muan.github.io/stories-feed-action/) ([GIF](https://user-images.githubusercontent.com/1153134/182153258-4f7e7cb5-5b80-48d9-96c8-3491075d9232.gif)) at `https://<username>.github.io/stories-feed-action`.
 
 8. With the [GitHub iOS app](https://github.com/mobile), you'll be able to set up a Shortcut to dispatch the workflow event right from your phone.
 
