@@ -2,7 +2,7 @@
 
 A GitHub Action that fetches a from an iCloud shared album, commits the images into the repository, and then generate [a data file](https://jekyllrb.com/docs/datafiles/) to the `_data` directory to be used for generating a [JSON feed](https://jsonfeed.org) with Jekyll.
 
-This is meant as a demostration for an Instagram-like [story viewer](https://www.npmjs.com/package/story-view-element) demo, so the images should be 9:16. Add each image individually to an album to include a caption.
+This is meant as a demostration for an Instagram-like [`<story-view>`](https://github.com/muan/story-view-element) demo, so the images should be 9:16. Add each image individually to an album to include a caption.
 
 [End result](https://muan.github.io/stories-feed-action/).
 
