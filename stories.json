@@ -12,7 +12,7 @@
       "id": "{{ story.id }}",
       "summary": "{{ story.summary }}",
       "image": "{{ site.url }}/{{ story.image }}",
-      "date_published": "{{ story.date_published }}"
+      "date_published": "{{ story.date_published | date_to_xmlschema }}"
     }{% if site.data.stories.last != story %},{% endif %}{% endfor %}
   ]
 }
