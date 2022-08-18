@@ -6,9 +6,9 @@ const imageDir = 'images'
 const feedPath = '_data/stories.json'
 const stories = []
 const data = await getiCloudData()
-console.log(data)
 
 for (const item of data.photos) {
+  console.log(item.derivatives)
   const imagePath = `${imageDir}/${item.photoGuid}.jpg`
   if (!fs.existsSync(imagePath)) {
     const response = await fetch(Object.values(item.derivatives)[1].url)
