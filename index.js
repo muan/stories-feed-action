@@ -6,6 +6,7 @@ const imageDir = 'images'
 const feedPath = '_data/stories.json'
 const stories = []
 const data = await getiCloudData()
+console.log(data)
 
 for (const item of data.photos) {
   const imagePath = `${imageDir}/${item.photoGuid}.jpg`
